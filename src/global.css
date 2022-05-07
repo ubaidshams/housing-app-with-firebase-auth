@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Syne&family=Viaoda+Libre&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  color: #111;
+  font-family: "Rubik", Helvetica, sans-serif;
+}
+.navbarBlock {
+  width: 100%;
+  height: 7vh;
+  background-color: #111;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbarBlock article {
+  width: 98%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarBlock article .logoBlock img {
+  width: 40%;
+}
+.navbarBlock article .menuBlock {
+  width: 40%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbarBlock article .menuBlock a {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.navbarBlock article .menuBlock a:nth-child(2) {
+  background-color: #fff;
+  color: #5e23dc;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: flex;
+  column-gap: 5px;
+  font-size: 13px;
+}
+.navbarBlock article .menuBlock a:nth-child(2) span:nth-child(2) {
+  background-color: #f22b68;
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 10px;
+}
+.navbarBlock article .menuBlock button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 68px;
+  height: 32px;
+  border-radius: 20px;
+  border: 1px solid #0003;
+  cursor: pointer;
+}
+.navbarBlock article .menuBlock button img {
+  width: 24px;
+  height: 24px;
+}
+.sidebarModal {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.sidebar {
+  width: 24%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #f2f3f8;
+}
+.headerMenu {
+  width: 100%;
+  height: 30%;
+  background-color: #f2f3f8;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.headerMenu .userContent {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+.headerMenu .userContent img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+.headerMenu .userContent .userInfo h6 {
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.headerMenu .userContent .userInfo p {
+  font-size: 12px;
+  display: flex;
+  column-gap: 5px;
+  margin-bottom: 3px;
+}
+.headerMenu .userContent .userInfo p svg {
+  font-size: 14px;
+  fill: #55d6a7;
+}
+.headerMenu .userContent button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(29, 211, 143);
+  cursor: pointer;
+  padding: 0px 17px;
+  line-height: 36px;
+  border: unset;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+.headerMenu .myActivity {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.headerMenu .myActivity h3 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.headerMenu .myActivity .activityContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerMenu .myActivity .activityContainer div {
+  width: 72px;
+  height: 72px;
+  background-color: #fff;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d4d4d4;
+  text-align: center;
+  font-size: 18px;
+  row-gap: 5px;
+  border-radius: 10px;
+}
+
+.headerMenu .myActivity .activityContainer div svg {
+  fill: #5e23dc;
+  color: #5e23dc;
+}
+.headerMenu .myActivity .activityContainer div span {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+#authBlock {
+  width: 100%;
+}
